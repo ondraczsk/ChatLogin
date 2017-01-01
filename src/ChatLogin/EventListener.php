@@ -48,7 +48,7 @@ class EventListener implements Listener {
 		if(!ServerAuth::getAPI()->isPlayerRegistered($player->getName())){
 			$player->sendMessage($this->plugin->translateColors("&", $prefix . $cfg["register-message"]));
 		}elseif(!ServerAuth::getAPI()->isPlayerAuthenticated($player)){
-			$player->sendMessage($this->plugin->translateColors("&", $prefix . $cfg["login-message"]));
+			$player->sendMessage($this->plugin->translateColors("&", $prefix . $cfg["§7========================================== \n §9>> §bVitej na §l§1A§9t§3l§1a§9n§3t§1h§9y§3i§1d§3i§9a§bGames §r§b,§9" . $this->player . "\n §9>> §bTento ucet je zaregistrovan \n §9>> §bPrihlas se zadanim hesla do chatu, nebo \n §9>> §bzmen svuj nick v MCPE nastaveni. \n §7=========================================="]));
 		}
 	}
 	
